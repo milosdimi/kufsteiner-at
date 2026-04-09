@@ -166,9 +166,9 @@
                             <a href="service.html#gartenpflege" class="dropdown-item">Gartenpflege</a>
                             <a href="service.html#treppen-stiegenhaus" class="dropdown-item">Treppen- &
                                 Stiegenhausreinigung</a>
-                            <a href="service.html#fahrzeuge" class="dropdown-item">Fahrzeuge (Full
-                                Service)</a>
+                            <!-- <a href="service.html#fahrzeuge" class="dropdown-item">Fahrzeuge (Full Service)</a> -->
                             <a href="service.html#trockeneisstrahlen" class="dropdown-item">Trockeneisstrahlen</a>
+                            <a href="service.html#ozon-reinigung" class="dropdown-item">Ozon-Reinigung</a>
                         </div>
                     </div>
 
@@ -449,7 +449,7 @@
                             </div>
                         </div>
 
-                        <!-- Fahrzeuge (Full Service) -->
+                        <!-- TODO: Fahrzeuge mit Kunde besprechen
                         <div id="fahrzeuge" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.3s">
                             <div class="bg-light p-4 h-100">
                                 <div class="service-icon-circle d-flex align-items-center justify-content-center border border-5 border-white mb-4">
@@ -466,6 +466,7 @@
                                 </button>
                             </div>
                         </div>
+                        -->
 
                         <!-- Trockeneisstrahlen -->
                         <div id="trockeneisstrahlen" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.4s">
@@ -480,6 +481,24 @@
                                 <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Vielseitige Anwendung</p>
                                 <button type="button" class="btn bg-white text-primary w-100 mt-2"
                                     data-bs-toggle="modal" data-bs-target="#trockeneisstrahlenModal">
+                                    Mehr erfahren<i class="fa fa-arrow-right text-secondary ms-2"></i>
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Ozon-Reinigung -->
+                        <div id="ozon-reinigung" class="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="1.5s">
+                            <div class="bg-light p-4 h-100">
+                                <div class="service-icon-circle d-flex align-items-center justify-content-center border border-5 border-white mb-4">
+                                    <i class="fa fa-wind fa-2x text-primary"></i>
+                                </div>
+                                <h4 class="mb-3">Ozon-Reinigung</h4>
+                                <p>Effektive Desinfektion und Geruchsneutralisation mit Ozon – schonend für Mensch, Tier und Oberflächen.</p>
+                                <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Keimfrei & hygienisch</p>
+                                <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Geruchsneutralisation</p>
+                                <p class="text-primary fw-medium"><i class="fa fa-check text-success me-2"></i>Ohne Chemie</p>
+                                <button type="button" class="btn bg-white text-primary w-100 mt-2"
+                                    data-bs-toggle="modal" data-bs-target="#ozonReinigungModal">
                                     Mehr erfahren<i class="fa fa-arrow-right text-secondary ms-2"></i>
                                 </button>
                             </div>
@@ -869,7 +888,7 @@
         </div>
     </div>
 
-    <!-- Fahrzeuge (Full Service) -->
+    <!-- TODO: Fahrzeuge mit Kunde besprechen
     <div class="modal fade" id="fahrzeugeModal" tabindex="-1" aria-labelledby="fahrzeugeModalLabel"
         aria-hidden="true" data-bs-focus="false">
         <div class="modal-dialog modal-lg">
@@ -897,6 +916,7 @@
             </div>
         </div>
     </div>
+    -->
 
     <!-- Trockeneisstrahlen -->
     <div class="modal fade" id="trockeneisstrahlenModal" tabindex="-1" aria-labelledby="trockeneisstrahlenModalLabel"
@@ -909,8 +929,9 @@
                 </div>
                 <div class="modal-body">
                     <picture>
-                        <source srcset="img/services/ozon.webp" type="image/webp">
-                        <img src="img/services/ozon.jpg" class="img-fluid mb-3" alt="Trockeneisstrahlen">
+                        <!-- TODO: Eigenes Foto für Trockeneisstrahlen einfügen -->
+                        <source srcset="img/services/service-2.webp" type="image/webp">
+                        <img src="img/services/service-2.jpg" class="img-fluid mb-3" alt="Trockeneisstrahlen Kufstein">
                     </picture>
                     <p>Trockeneisstrahlen ist eine innovative Methode, die Schmutz schonend und effektiv entfernt, ohne
                         Rückstände zu hinterlassen – ideal für empfindliche Oberflächen und Maschinen.</p>
@@ -919,6 +940,44 @@
                         <li>Umweltfreundliche Technologie</li>
                         <li>Keine chemischen Rückstände</li>
                         <li>Ideal für empfindliche Oberflächen</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Schließen</button>
+                    <a href="#booking" class="btn btn-primary booking-link">Termin anfragen</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Ozon-Reinigung -->
+    <div class="modal fade" id="ozonReinigungModal" tabindex="-1" aria-labelledby="ozonReinigungModalLabel"
+        aria-hidden="true" data-bs-focus="false">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ozonReinigungModalLabel">Ozon-Reinigung</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
+                </div>
+                <div class="modal-body">
+                    <picture>
+                        <source srcset="img/services/ozon.webp" type="image/webp">
+                        <img src="img/services/ozon.jpg" class="img-fluid mb-3" alt="Ozon-Reinigung Desinfektion Kufstein">
+                    </picture>
+                    <p>Die Ozon-Reinigung ist eine natürliche und hochwirksame Methode zur Desinfektion und
+                        Geruchsneutralisation – ohne den Einsatz von Chemikalien. Ozon zerstört Bakterien, Viren,
+                        Schimmelsporen und unangenehme Gerüche auf chemikalienfreiem Weg.</p>
+                    <p><strong>Einsatzbereiche:</strong></p>
+                    <ul>
+                        <li>Apartments und Ferienwohnungen nach Gästen</li>
+                        <li>Fahrzeuginnenräume (Rauch, Haustiere)</li>
+                        <li>Büros, Ordinationen und Fitnessstudios</li>
+                        <li>Keller, Lagerräume und feuchte Bereiche</li>
+                    </ul>
+                    <p><strong>Vorteile:</strong></p>
+                    <ul>
+                        <li>Keine chemischen Rückstände – 100 % natürlich</li>
+                        <li>Wirksam gegen Keime, Schimmel und Allergene</li>
+                        <li>Geruchsneutralisation dauerhaft und gründlich</li>
                     </ul>
                 </div>
                 <div class="modal-footer">
@@ -982,8 +1041,9 @@
                                             <option value="gewerbe-kompanien">Gewerbe- & Firmenpflege</option>
                                             <option value="gartenpflege">Gartenpflege</option>
                                             <option value="treppen-stiegenhaus">Treppen- & Stiegenhausreinigung</option>
-                                            <option value="fahrzeuge">Fahrzeuge (Full Service)</option>
+                                            <!-- <option value="fahrzeuge">Fahrzeuge (Full Service)</option> -->
                                             <option value="trockeneisstrahlen">Trockeneisstrahlen</option>
+                                            <option value="ozon-reinigung">Ozon-Reinigung</option>
                                         </select>
                                         <label for="service">Leistung</label>
                                     </div>

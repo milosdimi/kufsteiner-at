@@ -988,7 +988,7 @@
 .about-bg {
     background:
         linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-        url("../img/donzonkula.jpg") center / cover no-repeat;
+        url("../img/kufstein-bg.jpg") center / cover no-repeat;
     min-height: 600px;
     display: flex;
     align-items: center;
