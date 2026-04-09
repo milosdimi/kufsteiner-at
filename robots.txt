@@ -1,0 +1,14 @@
+User-agent: *
+Allow: /
+
+# Nicht indexieren
+Disallow: /send_mail.html
+Disallow: /en/send_mail.html
+
+# Sicherheitsregeln
+Disallow: /cgi-bin/
+Disallow: /tmp/
+Disallow: /private/
+
+# Sitemap
+Sitemap: https://www.kufsteiner-gebaeudereinigung.at/sitemap.xml
