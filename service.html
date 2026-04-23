@@ -928,11 +928,42 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Schließen"></button>
                 </div>
                 <div class="modal-body">
-                    <picture>
-                        <!-- TODO: Eigenes Foto für Trockeneisstrahlen einfügen -->
-                        <source srcset="img/services/service-2.webp" type="image/webp">
-                        <img src="img/services/service-2.jpg" class="img-fluid mb-3" alt="Trockeneisstrahlen Kufstein">
-                    </picture>
+                    <!-- Carousel: Bilder 1200×750px (WebP+JPG), Video 1280×720 oder 1920×1080 MP4 -->
+                    <div id="trockeneisCarousel" class="carousel slide carousel-dark mb-3" data-bs-ride="false">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#trockeneisCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Bild 1"></button>
+                            <button type="button" data-bs-target="#trockeneisCarousel" data-bs-slide-to="1" aria-label="Bild 2"></button>
+                            <button type="button" data-bs-target="#trockeneisCarousel" data-bs-slide-to="2" aria-label="Video"></button>
+                        </div>
+                        <div class="carousel-inner rounded">
+                            <div class="carousel-item active">
+                                <!-- TODO: Foto 1 einfügen (1200×750px WebP+JPG) -->
+                                <picture>
+                                    <source srcset="img/services/dryice/trockeneis-1.webp" type="image/webp">
+                                    <img src="img/services/dryice/trockeneis-1.jpg" class="d-block w-100" alt="Trockeneisstrahlen Kufstein – Bild 1" style="aspect-ratio:16/10;object-fit:cover;">
+                                </picture>
+                            </div>
+                            <div class="carousel-item">
+                                <picture>
+                                    <source srcset="img/services/dryice/trockeneis-2.webp" type="image/webp">
+                                    <img src="img/services/dryice/trockeneis-2.jpg" class="d-block w-100" alt="Trockeneisstrahlen Kufstein – Bild 2" style="aspect-ratio:16/10;object-fit:cover;">
+                                </picture>
+                            </div>
+                            <div class="carousel-item">
+                                <video id="trockeneisVideo" class="d-block w-100" controls playsinline preload="metadata" style="aspect-ratio:16/10;background:#000;">
+                                    <source src="img/services/dryice/trockeneis-video.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#trockeneisCarousel" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Zurück</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#trockeneisCarousel" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Weiter</span>
+                        </button>
+                    </div>
                     <p>Trockeneisstrahlen ist eine innovative Methode, die Schmutz schonend und effektiv entfernt, ohne
                         Rückstände zu hinterlassen – ideal für empfindliche Oberflächen und Maschinen.</p>
                     <p><strong>Vorteile:</strong></p>
@@ -1276,6 +1307,19 @@
     <script src="js/main.js"></script>
     <script src="js/cookie-mailer.js"></script>
     <script>document.getElementById('copyright-year').textContent = new Date().getFullYear();</script>
+    <script>
+        (function () {
+            var modal = document.getElementById('trockeneisstrahlenModal');
+            var video = document.getElementById('trockeneisVideo');
+            var carousel = document.getElementById('trockeneisCarousel');
+            if (modal && video) {
+                modal.addEventListener('hide.bs.modal', function () { video.pause(); });
+            }
+            if (carousel && video) {
+                carousel.addEventListener('slide.bs.carousel', function () { video.pause(); });
+            }
+        })();
+    </script>
 </body>
 
 </html>
