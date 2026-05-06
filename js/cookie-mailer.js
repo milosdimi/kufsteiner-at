@@ -60,6 +60,8 @@ function sendMail(event) {
         errorMessageDiv.textContent = "";
     }
 
+    const isEnglish = window.location.pathname.includes("/en/");
+
     // Senden an Formspree
     fetch("https://formspree.io/f/mzdkqavz", {
         method: "POST",
@@ -72,13 +74,15 @@ function sendMail(event) {
             if (response.ok) {
                 window.location.href = "./send_mail.html";
             } else {
-                throw new Error("Fehler beim Senden.");
+                throw new Error("Send error");
             }
         })
         .catch((error) => {
             console.error("Fehler beim Senden der E-Mail:", error);
             if (errorMessageDiv) {
-                errorMessageDiv.textContent = "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
+                errorMessageDiv.textContent = isEnglish
+                    ? "An error occurred. Please try again later."
+                    : "Es ist ein Fehler aufgetreten. Bitte versuchen Sie es später erneut.";
                 errorMessageDiv.style.display = "block";
             }
         });
