@@ -1,69 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-        xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- DE (Hauptsprache / Root) -->
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>1.00</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/about.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/service.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/contact.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.80</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/impressum.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.30</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/datenschutz.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.30</priority>
-  </url>
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <!-- DE -->
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/</loc><lastmod>2026-05-06</lastmod><priority>1.00</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/about.html</loc><lastmod>2026-05-06</lastmod><priority>0.80</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/service.html</loc><lastmod>2026-05-06</lastmod><priority>0.80</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/contact.html</loc><lastmod>2026-05-06</lastmod><priority>0.80</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/impressum.html</loc><lastmod>2026-05-06</lastmod><priority>0.30</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/datenschutz.html</loc><lastmod>2026-05-06</lastmod><priority>0.30</priority></url>
   <!-- EN -->
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/en/index.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.70</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/en/about.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/en/service.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/en/contact.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.60</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/en/impressum.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.20</priority>
-  </url>
-  <url>
-    <loc>https://www.kufsteiner-gebaeudereinigung.at/en/datenschutz.html</loc>
-    <lastmod>2026-04-09</lastmod>
-    <priority>0.20</priority>
-  </url>
-
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/en/index.html</loc><lastmod>2026-05-06</lastmod><priority>0.70</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/en/about.html</loc><lastmod>2026-05-06</lastmod><priority>0.60</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/en/service.html</loc><lastmod>2026-05-06</lastmod><priority>0.60</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/en/contact.html</loc><lastmod>2026-05-06</lastmod><priority>0.60</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/en/impressum.html</loc><lastmod>2026-05-06</lastmod><priority>0.20</priority></url>
+  <url><loc>https://kufsteiner-gebaeudereinigung.at/en/datenschutz.html</loc><lastmod>2026-05-06</lastmod><priority>0.20</priority></url>
 </urlset>
